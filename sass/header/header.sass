@@ -1,0 +1,60 @@
+header#header
+  color: $white
+  text-align: center
+  background-color: $black
+  background-image: url("../img/bg.jpg")
+  background-size: cover
+  background-position: center
+  padding: 50px 0
+  width: 100%
+  display: table
+  position: relative
+  border: 0
+
+  .profile
+    display: table-cell
+    width: 100%
+    text-align: center
+    vertical-align: middle
+    margin-right: auto
+    margin-left: auto
+    padding-left: 15px
+    padding-right: 15px
+
+    .content
+      max-width: 300px
+      margin: 0 auto
+
+      img
+        max-width: 200px
+        border-radius: 50%
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05)
+
+      h1
+        font-size: 28px
+        font-weight: 600
+        margin: 20px 0 10px
+
+      h2
+        color: $light-gray
+        font-size: 20px
+        font-weight: 300
+        margin: 0 0 10px
+
+      p
+        color: $light-gray
+        margin: 0 0 20px
+
+      a.social-icon
+        color: $black
+        font-size: 18px
+        line-height: 1.7
+        width: 30px
+        height: 30px
+        margin: 0 3px
+        display: inline-block
+        border-radius: 50%
+        background-color: $white
+
+        &:hover
+          color: $primary-color
