@@ -2,3 +2,85 @@ section#projects
   font-weight: 300
   padding: 50px 0
   background-color: $white
+
+  h3
+    text-align: center
+
+  .grid
+    padding: 0
+    margin: 0
+    list-style: none
+    text-align: center
+
+    li
+      display: inline-block
+      margin: 0
+      padding: 20px
+      text-align: center
+      position: relative
+
+    figure
+      margin: 0
+      position: relative
+
+      img
+        max-width: 100%
+        display: block
+        position: relative
+
+    figcaption
+      color: $primary-color
+      position: absolute
+      top: 0
+      left: 0
+      padding: 20px
+      background: $black
+
+      h3
+        color: $white
+        margin: 0
+        padding: 0
+
+      a
+        color: $white
+        text-align: center
+        text-decoration: none
+        padding: 5px 10px
+        border-radius: 2px
+        display: inline-block
+        background: $primary-color
+
+  .cards figcaption
+    height: 100%
+    width: 100%
+    opacity: 0
+    text-align: center
+    backface-visibility: hidden
+    transition: transform 0.3s, opacity 0.3s
+
+  .no-touch .cards figure:hover figcaption
+    opacity: 1
+    transform: translate(15px, 15px)
+
+  .cards
+    figure.hover figcaption
+      opacity: 1
+      transform: translate(15px, 15px)
+
+    figcaption
+      h3
+
+      span
+        display: block
+
+      a
+        margin-top: 30px
+
+
+  @media screen and (max-width: 31.5em)
+    .grid
+      padding: 0
+
+      li
+        width: 100%
+        min-width: 300px
