@@ -1,7 +1,7 @@
 section#projects
   font-weight: 300
   padding: 50px 0
-  background-color: $white
+  background-color: darken($white, 5%)
 
   h3
     text-align: center
@@ -24,9 +24,10 @@ section#projects
       position: relative
 
       img
-        max-width: 100%
+        max-width: 400px
         display: block
         position: relative
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
 
     figcaption
       color: $primary-color
@@ -43,7 +44,8 @@ section#projects
 
         h3
           color: $white
-          margin: 0
+          font-size: 28px
+          margin: 0 0 10px
           padding: 0
 
         a
@@ -63,9 +65,6 @@ section#projects
     backface-visibility: hidden
     transition: transform 0.3s, opacity 0.3s
 
-  .no-touch .cards figure:hover figcaption
-    opacity: 1
-
   .cards
     figure.hover figcaption
       opacity: 1
@@ -77,7 +76,7 @@ section#projects
         display: block
 
       a
-        margin-top: 30px
+        margin-top: 15px
 
 
   @media screen and (max-width: 600px)
