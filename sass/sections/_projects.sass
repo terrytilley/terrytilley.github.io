@@ -36,19 +36,24 @@ section#projects
       padding: 20px
       background: $black
 
-      h3
-        color: $white
-        margin: 0
-        padding: 0
+      .content
+        position: relative
+        top: 50%
+        transform: perspective(1px) translateY(-50%)
 
-      a
-        color: $white
-        text-align: center
-        text-decoration: none
-        padding: 5px 10px
-        border-radius: 2px
-        display: inline-block
-        background: $primary-color
+        h3
+          color: $white
+          margin: 0
+          padding: 0
+
+        a
+          color: $white
+          text-align: center
+          text-decoration: none
+          padding: 5px 10px
+          border-radius: 2px
+          display: inline-block
+          background: $primary-color
 
   .cards figcaption
     height: 100%
@@ -60,12 +65,10 @@ section#projects
 
   .no-touch .cards figure:hover figcaption
     opacity: 1
-    transform: translate(15px, 15px)
 
   .cards
     figure.hover figcaption
       opacity: 1
-      transform: translate(15px, 15px)
 
     figcaption
       h3

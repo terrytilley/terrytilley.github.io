@@ -4,3 +4,9 @@ $(document).ready(function() {
     function(){ $(this).removeClass('hover'); }
   );
 });
+
+// $(document).ready(function() {
+//   $('.cards li figure').click(function() {
+//     $(this).toggleClass('hover');
+//   });
+// });
