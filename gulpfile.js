@@ -99,7 +99,7 @@ gulp.task('images', function() {
 // --------------------------------------------------------------------
 // Task: Serve
 // --------------------------------------------------------------------
-gulp.task('serve', ['clean', 'sass', 'js', 'images'], function() {
+gulp.task('serve', ['clean', 'sass', 'js'], function() {
   browserSync.init({
     server: output.root,
     notify: false
